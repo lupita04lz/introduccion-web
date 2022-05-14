@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+
+    <style>
+        .a{
+            text-shadow: 2px 2px red;
+        }
+
+        .b{
+            text-shadow: 0 0 3px red, 0 0 5px blue;
+        }
+
+        #example1{
+            border: 2px solid;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;
+        }
+        
+        #example2{
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 3px 10px  #888888;
+        }
+
+        #example3{
+            width: 500px;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px red, 10px 20px  blue, 15px 30px green;
+        }
+
+        .card{
+            width: 350px;
+            border: 1px;
+            border-radius: 4px;
+            box-shadow: 3px 3px 4px 2px grey;
+            
+        }
+
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="a">Texto con sombras en rojo</h1>
+    <h1 class="b">Texto con sombras en rojo con azul en neon</h1>
+    
+    <p>box-shadow 5px 10px #888888</p>
+    <div id="example1">Algun texto dentro de un div</div>
+    <p></p>
+    <div id="example2">el cuarto valor opcional de box-shadow define la extension de la sombra</div>
+    <br><br>
+    <div id="example3">Concatenar sombras en box-shadow</div>
+    <br><br><br>
+
+    <div class="card">
+        <h1 class="center">Encabezado de la tarjeta</h1>
+        <p>Cuerpo de la tarjeta</p>
+    </div>
+
+</body>
+</html>

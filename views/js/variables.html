@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+
+    <script>
+        /*
+         Variables de tipo String
+        */
+        var textoA = "Comillas dobles";
+        var textoB = 'Comillas simples';
+        var textoC = "Comillas 'simples' dentro de comillas dobles";
+        var textoD = 'Comillas "dobles" dentro de comillas simples';
+       
+        console.log(textoA);
+        console.log(textoB);
+        console.log(textoC);
+        console.log(textoD);
+
+        // Operacion aritmetica
+        var x = '5';
+        var y = '3.2';
+
+        document.write(x + y + " " + typeof(x+y));
+        document.write(x * y + " " + typeof(x*y));
+
+
+        /*
+         Variables de tipo number
+        */
+
+        numberA = 10;
+        numberB = 3.7;
+
+        console.log(numberA + numberB);
+        console.log(numberA - numberB);
+        console.log(numberA * numberB);
+        console.log(numberA / numberB);
+        console.log(numberA % numberB);
+
+        console.log(numberA++); 
+        console.log(numberA);
+
+        console.log(++numberB); // numberB = numberB +1
+        console.log(numberB);
+        
+
+        /*
+            variables tipo boolean
+        */
+        
+        var verdadero = true;
+        var falso= false;
+
+        //tabla de verdad AND
+        console.log(verdadero && verdadero); // va a retornar true
+        console.log(verdadero && falso); // va a retornar false
+        console.log(falso && verdadero); // va a retornar false
+        console.log(falso && falso); //  false
+    
+
+        // tabla de verdad "OR"
+        console.log(verdadero || verdadero); // true
+        console.log(verdadero || falso); // true
+        console.log(falso || verdadero); // true
+        console.log(falso || falso); //  false
+
+        // condicione de igualdad y negación
+
+        console.log(verdadero == falso); //false
+        console.log(verdadero != falso);// true
+
+        console.log(verdadero == 1);
+        console.log(verdadero === 1);
+        console.log(verdadero !== 1);
+
+
+
+    </script>
+    
+</body>
+</html>

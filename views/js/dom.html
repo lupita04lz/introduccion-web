@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+</head>
+<body>
+
+    <input id="edad" type="number">
+    <p>Parrafo</p>
+    <h1 name="nombre">Walter</h1>
+    <h3 class="clase">Hola</h3>
+    <h2 class="clase">Hola</h2>
+
+    <script>
+        var parrafos = document.getElementsByTagName('p');
+        var nombres = document.getElementsByName('nombre');
+        var elementosClase = document.getElementsByClassName('clase');
+        var inputEdad = document.getElementById('edad');
+
+        console.log(parrafos[0].innerHTML);
+        console.log(nombres[0].innerHTML);
+        console.log(elementosClase[0].innerHTML);
+        console.log(elementosClase);
+
+        console.log(inputEdad);
+        inputEdad.value = 1;
+        console.log(inputEdad.value);
+    
+    </script>
+    
+</body>
+</html>

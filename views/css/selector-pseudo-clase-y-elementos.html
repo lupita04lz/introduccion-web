@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clase y elementos</title>
+    <style>
+        /* ------------ Pseudo-clase ---------------- */
+        /* link no visitado */
+        a:link {
+            color: red;
+        }
+
+        /* link visitado */
+        a:visited {
+            color: green
+        }
+
+        /* el mouse esta sobre el link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* el link esta seleccionado */
+        a:active {
+            color :blue
+        }
+
+        /* ------------ Pseudo-elemento ---------------- */
+
+        p::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+
+        p::first-line {
+            color: blue;
+            font-variant: small-caps;
+        }
+
+        /* ------------ Atributos ---------------- */
+        a[target=_blank] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://educon.cuvalles.udg.mx/" target="_blank">CUValles</a>
+    <br>
+    <a href="http://google.com/">Google</a>
+
+    <p>Letra capital y primera liena en color azul <br> jhkfskf jkdjflksjdflksd kfjsdlkfjdsl klñfds</p>
+</body>
+</html>

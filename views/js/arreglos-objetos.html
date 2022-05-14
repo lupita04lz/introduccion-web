@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos y objetos</title>
+</head>
+<body>
+    <script>
+        /*Arreglos*/
+        var texto = 'Lupita';
+        var miArreglo = ["fresa", 'pera', texto, 22, , "Paris", true ];
+
+        console.log(miArreglo);
+        console.log(miArreglo[0]);
+        console.log(miArreglo[1]);
+        console.log(miArreglo[6]);
+
+        console.log(miArreglo.l); // tamaño del arreglo+
+        console.log(miArreglo[miArreglo.length-1]);    
+
+        //Objetos
+        var persona = {
+            nombre: 'Lupita',
+            apellido: 'Lopez',
+            aficiones: ['caminar', 'comer', 'jugar'],
+            inscrito: true
+        };
+         console.log(persona);
+         console.log(persona.nombre);
+         console.log(persona.aficiones);
+         console.log(persona.aficiones[1]);
+         console.log('-------------------------');
+
+         // mas metodos de los arreglos
+
+         var fruta =['platano', 'naranja', 'manzana', 'mango'];
+         console.log(fruta);
+         console.log(fruta.toString); // convierte el arreglo en una cadena sin modificarlo
+
+         console.log(fruta.pop()); // toma el ultimo elemento, lo retorna y lo elimina del arreglo
+         console.log(fruta);
+
+         fruta.push('kiwi'); // inserta un elemento al final del arreglo
+         console.log(fruta);
+
+         console.log(fruta.shift()); // toma el primer elemento, lo retorna y lo elimina del arreglo
+         console.log(fruta);
+
+         var nombres = ['pedro', 'ana', 'ramon', 'liz'];
+
+         console.log(nombres);
+         // retorna y elimina los elemnts apartir del indice que le indiquemos
+         console.log(nombres.splice(1, 2));
+         console.log(nombres);
+
+         var nombres = ['pedro', 'ana', 'ramon', 'liz'];
+
+         console.log(nombres);
+         // el tercer parametro sirve para sustituir los elementos eliminados
+         console.log(nombres.splice(1, 2, 'roberto', 'alicia'));
+         console.log(nombres);
+
+        var arregloConcatenado = fruta.concat(nombres, miArreglo);
+        console.log(arregloConcatenado);
+
+        console.log(nombres.sort());
+        console.log(nombres.reverse());
+
+        console.log('-------------------------');
+
+        var edades = [49, 5, 10, 38, 100, 70];
+
+        var mayorDeEdad = edades.filter((value, index, arreglo) => {
+            // siempre va a retornar un boolean
+            return value >= 18;
+        });
+
+        console.log(edades);
+        console.log(mayorDeEdad);
+
+        prueba(edades, 'ana', 2, null, [])
+
+        // como buena practica el conjunto de patametros siempre tiene que ir al final
+        function prueba(edad, nombre, ...palabras){
+            console.log(palabras)
+
+        }
+
+    </script>
+</body>
+</html>

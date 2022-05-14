@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Registro de usuario</legend>
+
+            <!-- input tipo texto -->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" value="Walter">
+            <br>
+            
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa un apellido">
+            <br>
+            
+            <!-- input tipo number -->
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad" min="18" max="50" step="2">
+            <br>
+            
+            <!-- input tipo textarea -->
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" cols="20" rows="5" placeholder="Comentarios...">algun comentario</textarea>
+            <br>
+            
+            <!-- input tipo select -->
+            <label for="carro">Carro:</label><br>
+            <select name="carro" id="carro">
+                <option value="">Selecciona una opción</option>
+                <option value="ford" selected>Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="bmw">BMW</option>
+            </select>
+            <br>
+            
+            <!-- input tipo radio -->
+            <p>Selecciona tu genero</p>
+            <input type="radio" name="genero" id="hombre" value="hombre">
+            <label for="hombre">Hombre</label><br>
+            
+            <input type="radio" name="genero" id="mujer" value="mujer">
+            <label for="mujer">Mujer</label><br>
+
+            <!-- input de tipo checkbox -->
+            <p>Selecciona tu vehiculo</p>
+            <input type="checkbox" name="vehiculo" id="bici" value="bici">
+            <label for="bici">Bicicleta</label><br>
+            
+            <input type="checkbox" name="vehiculo" id="auto" value="auto">
+            <label for="auto">Auto</label><br>
+            
+            <input type="checkbox" name="vehiculo" id="bote" value="bote">
+            <label for="bote">Bote</label><br>
+            
+            <br>
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Deshacer">
+            
+        </fieldset>
+
+    </form>
+
+    <button type="button" onclick="alert('Hola!!');">Saludo</button>
+</body>
+</html>

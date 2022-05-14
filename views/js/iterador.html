@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterador</title>
+</head>
+<body>
+    <script>
+        var numeros = [1, 10, 25, 50, 3];
+
+        // iterando con ciclo for
+        for (let index = 0; index < numeros.length; index++) {
+            console.log(numeros[index]);
+        }
+        // iterando con forEach
+        numeros.forEach(miIterador); 
+
+         function miIterador(value, index, original) {// funcion comun declarada
+
+            console.log(value);
+            console.log(index);
+             
+         }
+
+         numeros.forEach(function (value, index, arreglo)  { //funcion anonima
+            console.log('function anonima'+value);
+         });
+
+         numeros.forEach((value, index, arreglo) =>{ //funcion flecha
+            console.log('function flecha '+value);
+         });
+
+         numeros.forEach(value =>{
+            console.log('function flecha  simplificada '+value);
+
+         });
+
+
+
+    </script>
+</body>
+</html>
